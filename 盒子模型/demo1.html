@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">/*css yang*/
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.box1{
+			overflow: hidden;
+			width: 200px;
+			height: 100px;
+			margin-top: 30px;
+			/*padding-top: 1px;*/
+			background: green;
+		}
+		.box2{
+			width: 100px;
+			height: 50px;
+			margin-top: 40px;
+			background: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div class='box1'>
+		<div class='box2'></div>
+	</div>
+	
+	<!-- 
+		水平方向 x+y = 100 成立
+		垂直方向 x+y = 100    20   80    80
+		                     30   70    70
+		                     10   90    90
+        外边距合并出发的条件
+        <1>兄弟元素在竖直方向有margin时触发
+        <2>父子级元素在竖直方向有margin时触发
+        解决外边距合并的方案
+        <1>外边距起点不同 padding打断
+        <2>生成BFC overflow:hidden
+	 -->
+</body>
+</html>
