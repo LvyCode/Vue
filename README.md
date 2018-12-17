@@ -1,41 +1,38 @@
 # vue开发环境搭建Mac版
 1、安装brew 
 打开终端运行以下命令：
-
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-1
 安装成功后，查看一下brew的版本信息：
-
 brew -v
-1注：我安装成功后，在查看brew的信息是出现”-bash: brew: command not found”,处理方法：解决mac安装homebrew后报错-bash: brew: command not found，还要说明一点的是，我没有vim去修改那个文件，我是直接找到那个文件用文本编辑器直接修改的。
+注：我安装成功后，在查看brew的信息是出现”-bash: brew: command not found”,处理方法：解决mac安装homebrew后报错-bash: brew: command not found，还要说明一点的是，我没有vim去修改那个文件，我是直接找到那个文件用文本编辑器直接修改的。
 
 2、安装node.js 
 在终端中运行以下命令：
 
 brew install nodejs
-1也可以下载后安装： 
+也可以下载后安装： 
 下载地址：https://nodejs.org/en/download/
 
 安装成功后，查看一下node.js的版本信息：
 
 node -v
-1
+
 3、获取nodejs模块安装目录访问权限
 
 　sudo chmod -R 777 /usr/local/lib/node_modules/
-1
+ 
 4、安装 淘宝镜像 （npm）
 
 npm install -g cnpm --registry=https://registry.npm.taobao.org
-1
+
 5、安装webpack
 
 cnpm install webpack -g
-1
+
 6、安装vue脚手架
 
 npm install vue-cli -g
-1
+
 7、在硬盘上找一个文件夹放工程用的，在终端中进入该目录
 
 cd 目录路径
